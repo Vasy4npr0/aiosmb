@@ -17,7 +17,8 @@ from aiosmb.dcerpc.v5.rpcrt import RPC_C_AUTHN_LEVEL_NONE,\
 	RPC_C_AUTHN_LEVEL_PKT_INTEGRITY,\
 	RPC_C_AUTHN_LEVEL_PKT_PRIVACY,\
 	DCERPCException, RPC_C_AUTHN_GSS_NEGOTIATE
-from unicrypto.symmetric import cipherMODE, DES, expand_DES_key
+from unicrypto.symmetric import cipherMODE, expand_DES_key
+from unicrypto.backends.pure.DES import DES
 from winacl.dtyp.wcee.backupkey import PREFERRED_BACKUP_KEY
 from winacl.dtyp.wcee.pvkfile import PVKFile
 from contextlib import asynccontextmanager
