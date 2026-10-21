@@ -35,7 +35,8 @@ from aiosmb.dcerpc.v5.enum import Enum
 from aiosmb.dcerpc.v5.rpcrt import DCERPCException
 from unicrypto.symmetric import expand_DES_key, MODE_ECB
 from asn1crypto.core import ObjectIdentifier
-from unicrypto.symmetric import RC4, DES
+from unicrypto.backends.pure.RC4 import RC4
+from unicrypto.backends.pure.DES import DES
 
 MSRPC_UUID_DRSUAPI = uuidtup_to_bin(('E3514235-4B06-11D1-AB04-00C04FC2DCD2','4.0'))
 
