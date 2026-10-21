@@ -35,8 +35,10 @@ from aiosmb.dcerpc.v5.rpcrt import DCERPCException
 from aiosmb.dcerpc.v5.structure import Structure
 #from impacket import ntlm, crypto
 from aiosmb import logger as LOG
-from unicrypto.symmetric import AES, DES, RC4, MODE_CFB, MODE_ECB, expand_DES_key
-from unicrypto.symmetric import AES, RC4, DES
+from unicrypto.symmetric import MODE_CFB, MODE_ECB, expand_DES_key
+from unicrypto.backends.pure.AES import AES
+from unicrypto.backends.pure.DES import DES
+from unicrypto.backends.pure.RC4 import RC4
 from unicrypto.hashlib import md4
 from unicrypto import hmac
 from unicrypto import hashlib
