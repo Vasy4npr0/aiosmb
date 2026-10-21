@@ -9,7 +9,7 @@ from aiosmb.dcerpc.v5.structure import unpack
 from aiosmb.dcerpc.v5.uuid import uuidtup_to_bin, generate, stringver_to_bin, bin_to_uuidtup
 from aiosmb.dcerpc.v5.rpcrt import *
 from aiosmb.dcerpc.v5 import hresult_errors
-from unicrypto.symmetric import RC4
+from unicrypto.backends.pure.RC4 import RC4
 from asyauth.common.winapi.constants import ISC_REQ
 import sys
 
