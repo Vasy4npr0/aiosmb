@@ -35,7 +35,8 @@ from aiosmb.commons.connection.target import *
 
 from unicrypto import hmac
 from unicrypto import hashlib
-from unicrypto.symmetric import AES, MODE_CCM, MODE_GCM
+from unicrypto.symmetric import MODE_CCM, MODE_GCM
+from unicrypto.backends.pure.AES import AES
 from unicrypto.cmac import AES_CMAC
 from unicrypto.kdf import KDF_CounterMode
 from aiosmb.protocol.compression.lznt1 import compress as lznt1_compress
