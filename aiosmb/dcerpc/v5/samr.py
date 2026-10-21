@@ -32,7 +32,9 @@ from aiosmb.dcerpc.v5.ndr import NDRCALL, NDR, NDRSTRUCT, NDRUNION, NDRPOINTER, 
 from aiosmb.dcerpc.v5.dtypes import NULL, RPC_UNICODE_STRING, ULONG, USHORT, UCHAR, LARGE_INTEGER, RPC_SID, LONG, STR, LPBYTE, SECURITY_INFORMATION, PRPC_SID, PRPC_UNICODE_STRING, LPWSTR
 from aiosmb.dcerpc.v5.rpcrt import DCERPCException
 from aiosmb.wintypes.ntstatus import NTStatus
-from unicrypto.symmetric import DES, cipherMODE, RC4
+from unicrypto.symmetric import cipherMODE
+from unicrypto.backends.pure.DES import DES
+from unicrypto.backends.pure.RC4 import RC4
 from unicrypto import hashlib
 
 
